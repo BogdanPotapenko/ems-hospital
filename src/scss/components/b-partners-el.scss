@@ -1,0 +1,19 @@
+.b-partners__el {
+  text-align: center;
+  padding: 10px 4.2%;
+
+  .b-partners__el-img {
+    width: 130px;
+    height: 130px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 5px;
+  }
+  .b-partners__el-text {
+    max-width: 170px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}

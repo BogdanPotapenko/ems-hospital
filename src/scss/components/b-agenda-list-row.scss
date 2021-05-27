@@ -1,0 +1,57 @@
+.b-agenda__list {
+  .b-agenda__list-row {
+    border-bottom: 1px solid #816f6f;
+    padding: 40px 10%;
+
+    .b-agenda__list-el {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        .b-agenda__list-el-time {
+            width: 20.74236%;
+            font-size: 20px;
+        }
+        .b-agenda__list-el-topic {
+            width: 63.10044%;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .b-agenda__list-el-speaker {
+            width: 21.28821%;
+            font-size: 20px;
+
+            .b-agenda__list-el-text {
+                font-size: 14px;
+                color: #5a5a5a;
+                position: relative;
+                top: -4px;
+            }
+        }
+    }
+  }
+  .b-agenda__list-row--title {
+    background-color: #d8d1cc;
+    padding-top: 8px;
+    padding-bottom: 10px;
+
+    .b-agenda__list-el {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      .b-agenda__list-el-time {
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .b-agenda__list-el-topic {
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .b-agenda__list-el-speaker {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+}

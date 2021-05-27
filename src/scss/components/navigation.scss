@@ -1,0 +1,95 @@
+
+.b-nav {
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #f4ede8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid transparent;
+
+  .o-container {
+
+    .b-nav__inner {
+      display: flex;
+      width: 100%;
+      height: 96px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+      -webkit-transition: height 0.3s ease;
+      -o-transition: height 0.3s ease;
+      transition: height 0.3s ease;
+
+      .b-nav__logo {
+        z-index: 99;
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+        }
+
+        .o-logo__link {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          display: block;
+
+          .o-svg {
+            width: 161px;
+            -webkit-transition: width 0.3s ease;
+            -o-transition: width 0.3s ease;
+            transition: width 0.3s ease;
+
+            svg {
+              max-width: 100%;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+      .b-menu-btn {
+        display: none;
+        padding: 11px 0;
+        position: absolute;
+        width: 30px;
+        cursor: pointer;
+        right: 0;
+        z-index: 99;
+
+        .b-menu-btn__fig {
+          width: 30px;
+          height: 4px;
+          background: #1a1a1a;
+        }
+      }
+      .b-menu {
+        .b-menu__list {
+          display: flex;
+
+          .b-menu__el {
+            padding: 0 10px;
+
+            .b-menu__el-link {
+              color: #1a1a1a;
+              text-decoration: none;
+            }
+            .b-menu__el-link--active {
+              color: #ed1c29;
+            }
+          }
+        }
+      }
+    }
+  }
+}

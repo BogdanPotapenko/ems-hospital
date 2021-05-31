@@ -1,0 +1,67 @@
+.expert-el-wrap {
+  max-width: 396px;
+  width: 100%;
+  padding: 30px 15px;
+  @include media('<desktop') {
+    width: 50%;
+  }
+  @include media('<phone') {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .expert-el {
+    background-color: #d8d1cc;
+    padding: 20px;
+    height: 100%;
+    max-width: 336px;
+    margin: 0 auto;
+    border-radius: 2%;
+
+    .expert-fig {
+      margin: 0 auto;
+      max-width: 288px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 2%;
+      }
+    }
+    .expert-meta {
+      @include media('<desktop') {
+        padding-top: 20px;
+      }
+      @include media('<phone') {
+        padding-top: 0;
+      }
+      .expert-name {
+        padding-top: 12px;
+        font-weight: 700;
+        font-size: 26px;
+        @include media('<tablet') {
+          font-size: 20px;
+        }
+        @include media('<phone') {
+          font-size: 16px;
+        }
+      }
+      .expert-text {
+        font-weight: 300;
+        font-size: 18px;
+        @include media('<tablet') {
+          font-size: 16px;
+        }
+        @include media('<phone') {
+          font-size: 14px;
+        }
+
+         a {
+            color: #1a1a1a;
+            border-bottom: 1px solid rgba(26,26,26,.3);
+        }
+      }
+    }
+  }
+}

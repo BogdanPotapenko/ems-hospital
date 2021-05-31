@@ -1,53 +1,62 @@
-.b-col2 {
+.column {
   padding-top: 40px;
   padding-bottom: 150px;
   background-image: url(../../../../images/angels-s.svg);
   background-repeat: no-repeat;
   background-position: 110% 100%;
+  @include media('<desktop') {
+    background-position: 150% 100%;
+    padding-bottom: 90px;
+  }
 
-  .o-container {
-    .b-col2__title1 {
+  .container {
+    .column-title1 {
       text-align: center;
       font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 50px;
       font-size: 36px;
       font-size: 3vw;
-      @media (min-width: 1200px) {
+      @include media('>widescreen') {
         font-size: 36px;
       }
+      @include media('<tablet') {
+        font-size: 22px;
+      }
+      @include media('<phone') {
+        font-size: 18px;
+      }
     }
-    .b-col2__title2 {
+    .column-title2 {
       font-weight: 500;
       font-size: 32px;
       margin-bottom: 35px;
+      @include media('<desktop') {
+        font-size: 28px;
+      }
     }
-    .b-col2__row {
-      display: -webkit-box;
-      display: -ms-flexbox;
+    .column-row {
       display: flex;
       margin: 0 -50px;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-      .b-col2__col {
+      .column-col {
         width: 50%;
         padding: 0 50px;
         max-width: 512px;
+        @include media('<desktop') {
+          max-width: 100%;
+          width: 100%;
+        }
 
-        .b-col2__text {
+        .column-text {
           font-size: 18px;
           font-weight: 300;
         }
       }
-      .b-col2__col-wide {
+      .column-col-wide {
         width: 100%;
         max-width: 100%;
-
-        a {
-          color: #242424;
-          text-decoration: underline;
-        }
       }
     }
   }

@@ -1,20 +1,22 @@
-.b-footer-contact__el {
+.footer-contact-el {
   padding: 0 33px;
+  @include media('<desktop') {
+    padding: 33px;
+  }
 
-  .b-footer-contact__name {
+  .footer-contact-name {
     font-size: 18px;
     font-weight: 500;
   }
-  .b-footer-contact__text {
+  .footer-contact-text {
     font-size: 12px;
     font-weight: 300;
     padding-bottom: 15px;
   }
-  .b-footer-contact__link {
+  .footer-contact-link {
     a {
       font-size: 16px;
       display: inline-block;
-      color: #242424;
     }
   }
 }

@@ -1,15 +1,19 @@
-.b-event {
+.event {
   background-color: #f4ede8;
   color: #1a1a1a;
   padding: 96px 20px 10px;
 
-  .b-event__inner {
+  .event-inner {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 90% 50%;
 
-    .b-event__text3 {
+    .event-text3 {
       text-align: center;
+      @include media('<desktop') {
+        font-size: 14px;
+        padding-top: 30px;
+      }
 
       img {
         max-width: 182px;
@@ -20,41 +24,48 @@
         font-size: 16px;
       }
     }
-    .b-event__text3 + .b-event__text2 {
+    .event-text3 + .event-text2 {
       padding-top: 8px;
     }
-    .b-event__text2 {
+    .event-text2 {
       padding-top: 60px;
       text-align: center;
       color: #1a1a1a;
       font-size: 42px;
       font-weight: 700;
       margin: 0 auto;
-      font-family: Montserrat, sans-serif;
+      @include media('<desktop') {
+        font-size: 26px;
+      }
+      @include media('<phone') {
+        font-size: 20px;
+      }
     }
-    .b-event__date-group {
-      display: -webkit-box;
-      display: -ms-flexbox;
+    .event-date-group {
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       padding-top: 16px;
+      @include media('<desktop') {
+        flex-direction: column;
+        align-items: center;
+      }
 
-      .b-event__date {
+      .event-date {
         padding: 0 20px;
 
-        .b-event__date-el {
-          display: -webkit-box;
-          display: -ms-flexbox;
+        .event-date-el {
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
           align-items: center;
 
-          .b-event__date-text {
+          .event-date-text {
             font-size: 20px;
             padding-left: 5px;
+            @include media('<desktop') {
+              font-size: 18px;
+            }
+            @include media('<phone') {
+              font-size: 14px;
+            }
 
             small {
               position: relative;
@@ -64,75 +75,84 @@
         }
       }
     }
-    .b-timer {
+    .timer {
       padding-top: 30px;
 
-      .b-timer__group {
+      .timer-group {
         margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         color: #816f6f;
 
-        .b-timer__el {
+        .timer-el {
           position: relative;
           padding: 0 10px;
 
-          .b-timer__el-inner {
+          .timer-el-inner {
             padding: 21px 0;
             width: 92px;
             border: 1px solid #816f6f;
             text-align: center;
+            @include media('<desktop') {
+              width: 70px;
+            }
+            @include media('<phone') {
+              width: 55px;
+            }
 
-            .b-timer__num {
+            .timer-num {
               font-size: 50px;
               font-weight: 500;
               line-height: 1;
+              @include media('<desktop') {
+                font-size: 32px;
+              }
+              @include media('<phone') {
+                font-size: 24px;
+              }
             }
           }
         }
-        .b-timer__el--live {
-          .b-timer__el-inner {
+        .timer-el--live {
+          .timer-el-inner {
             width: auto;
             padding: 21px 40px;
             min-width: 300px;
+            @include media('<tablet') {
+              min-width: unset;
+              padding: 21px;
+            }
 
-            .b-timer__num {
+            .timer-num {
               text-transform: uppercase;
               font-size: 42px;
+              @include media('<desktop') {
+                font-size: 28px;
+              }
+              @include media('<phone') {
+                font-size: 18px;
+              }
             }
           }
         }
       }
     }
-    .b-event__btn {
+    .event-btn {
       margin: 0 auto;
       text-align: center;
       padding-top: 40px;
       padding-bottom: 60px;
 
-      .b-event__btn-link {
+      .event-btn-link {
         padding: 16px 58px;
         display: inline-block;
         margin: 0 auto;
         color: #fff;
-        background: #1a1a1a;
+        background: #75c044;
         font-size: 18px;
-        -webkit-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
         text-transform: uppercase;
         min-width: 300px;
-      }
-
-      .b-event__btn-link--m1 {
-        background: #75c044;
       }
     }
   }

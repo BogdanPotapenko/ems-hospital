@@ -1,8 +1,14 @@
-.b-partners__el {
+.partners-el {
   text-align: center;
   padding: 10px 4.2%;
+  @include media('<desktop') {
+    width: 33.33333%;
+  }
+  @include media('<phone') {
+    width: 50%;
+  }
 
-  .b-partners__el-img {
+  .partners-el-img {
     width: 130px;
     height: 130px;
     background-position: 50%;
@@ -10,7 +16,7 @@
     background-repeat: no-repeat;
     margin: 0 auto 5px;
   }
-  .b-partners__el-text {
+  .partners-el-text {
     max-width: 170px;
     margin: 0 auto;
     font-size: 10px;

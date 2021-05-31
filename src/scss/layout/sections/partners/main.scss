@@ -1,0 +1,22 @@
+.partners {
+  margin-bottom: 118px;
+
+  .container {
+    .partners-list {
+      margin: 0 auto;
+      max-width: 1000px;
+      padding-top: 48px;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      @include media('<desktop') {
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      @include media('<phone') {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

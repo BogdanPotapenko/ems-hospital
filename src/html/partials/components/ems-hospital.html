@@ -1,9 +1,9 @@
-<div class="navbar">
+<div class="navbar" id="nav">
   <div class="container">
-    <div class="navbar-inner">
+    <div class="navbar-inner mobile-menu" id="navbar">
       <div class="navbar-logo">
         <a class="logo-link" href="http://localhost:8080"
-          ><div class="logo-svg">
+          ><div class="logo-svg" id="logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="419.96"
@@ -26,13 +26,15 @@
         ></a>
       </div>
       <div class="navbar-menu-btn">
-        <div class="menu-btn-fig"></div>
+          <a href="#nav" class="nav-toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <div class="menu-btn-fig"></div>
+          </a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" id="menu" hidden>
         <div class="menu-list">
-          <div class="menu-el" id="myLinks">
+          <div class="menu-el" >
             <a
-              class="menu-el-link menu-el-link--active"
+              class="menu-el-link"
               href="#reestraciya"
               data-id="reestraciya"
               >Реєстрація</a

@@ -1,35 +1,217 @@
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div
-      class="modal__container"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-1-title"
-    >
-      <header class="modal__header">
-        <h2 class="modal__title" id="modal-1-title">Micromodal</h2>
-        <button
-          class="modal__close"
-          aria-label="Close modal"
-          data-micromodal-close
-        ></button>
-      </header>
-      <main class="modal__content" id="modal-1-content">
-        <p>
-          Try hitting the <code>tab</code> key and notice how the focus stays
-          within the modal itself. Also, <code>esc</code> to close modal.
-        </p>
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary">Continue</button>
-        <button
-          class="modal__btn"
-          data-micromodal-close
-          aria-label="Close this dialog window"
-        >
-          Close
-        </button>
-      </footer>
+  <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+    <button
+      class="modal-close"
+      aria-label="Close modal"
+      data-micromodal-close=""
+    ></button>
+    <div class="modal-content">
+      <div class="form">
+        <div class="form-inner">
+          <div class="form-title">Реєстрація участі у конференції</div>
+          <div class="form-wrapper">
+            <form>
+              <div class="form-body">
+                <ul class="form-fields">
+                  <li class="field">
+                    <label class="field-label"
+                      >Ім'я<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_1"
+                        id="input_13_1"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="1"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_3"
+                      >Прізвище<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_3"
+                        id="input_13_3"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="2"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_13"
+                      >По батькові<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_13"
+                        id="input_13_13"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="3"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_2"
+                      >Адреса електронної пошти<span class="field-required"
+                        >*</span
+                      ></label
+                    >
+                    <div class="input-container input-container_email">
+                      <input
+                        name="input_2"
+                        id="input_13_2"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="4"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_7"
+                      >Номер телефону<span class="field-required"
+                        >*</span
+                      ></label
+                    >
+                    <div class="input-container input-container_phone">
+                      <input
+                        name="input_7"
+                        id="input_13_7"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="5"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_5"
+                      >Місто<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_5"
+                        id="input_13_5"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="6"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_12"
+                      >Посада<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_12"
+                        id="input_13_12"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="7"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field">
+                    <label class="field-label" for="input_13_11"
+                      >Місце роботи<span class="field-required">*</span></label
+                    >
+                    <div class="input-container input-container_text">
+                      <input
+                        name="input_11"
+                        id="input_13_11"
+                        type="text"
+                        value=""
+                        class="medium"
+                        tabindex="8"
+                        aria-required="true"
+                        aria-invalid="false"
+                      />
+                    </div>
+                  </li>
+                  <li class="field field-wide">
+                    <label class="field-label"
+                      >Чи даєте ви згоду на опрацювання даних?<span
+                        class="field-required"
+                        >*</span
+                      ></label
+                    >
+                    <div class="field-description">
+                      Метою програми Angels Initiative є підтримка системи
+                      охорони здоров’я, і вона не є засобом схилити Вас до
+                      застосування рекомендацій, призначення, придбання,
+                      постачання, продажу або застосування певної медичної
+                      продукції.
+                      <br />
+                      Я усвідомлюю, що жодна дія або бездіяльність із боку
+                      консультантів Angels Consultants або будь-яких третіх
+                      осіб, залучених до участі у програмі, не тягне за собою
+                      жодних зобов’язань стосовно компанії Boehringer Ingelheim.
+                      Я усвідомлюю, що якщо мій заклад охорони здоров’я захоче
+                      впровадити пропозиції, визначені в рамках ініціативи або
+                      будь-якої іншої платформи, це відбудеться на власний ризик
+                      закладу охорони здоров’я та не потягне за собою жодних
+                      зобов’язань із боку компанії Boehringer Ingelheim.
+                      <br />
+                      Реєструючись на цьому веб-сайті я підтверджую, що є
+                      фахівцем галузі охорони здоров’я, пов’язаним з медичним
+                      закладом, обраним мною вище.
+                      <br />
+                      Я надаю згоду на обробку моїх особистих даних.
+                    </div>
+                    <div class="input-container input-container-checkbox">
+                      <ul class="field-checkbox" id="input_13_15">
+                        <li class="choice">
+                          <input
+                            name="input_15.1"
+                            type="checkbox"
+                            value="Я прочитав(ла) вищезазначені Умови та погоджуюся з ними."
+                            id="choice_13_15_1"
+                            tabindex="9"
+                          />
+                          <label for="choice_13_15_1" id="label_13_15_1"
+                            >Я прочитав(ла) вищезазначені Умови та погоджуюся з
+                            ними.</label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-footer">
+                <button class="button">
+                  <span>НАДIСЛАТИ</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

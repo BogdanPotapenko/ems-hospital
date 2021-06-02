@@ -1,93 +1,149 @@
-.navbar {
-  max-width: 100%;
-  overflow: hidden;
-  background-color: #f4ede8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  border-bottom: 1px solid transparent;
+.body {
+  .navbar {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #f4ede8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid transparent;
 
-  .container {
-    .navbar-inner {
-      display: flex;
-      width: 100%;
-      height: 96px;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
+    .container {
+      .navbar-inner {
+        display: flex;
+        width: 100%;
+        height: 96px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
 
-      .navbar-logo {
-        .logo-link {
-          display: block;
+        .navbar-logo {
+          z-index: 99;
 
-          .logo-svg {
-            width: 161px;
+          .logo-link {
+            display: block;
 
-            svg {
-              max-width: 100%;
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-      }
-      .navbar-menu-btn {
-        display: none;
-        padding: 11px 0;
-        position: absolute;
-        width: 30px;
-        cursor: pointer;
-        right: 0;
-        z-index: 99;
-        @include media('<desktop') {
-          display: block;
-        }
+            .logo-svg {
+              width: 161px;
 
-        .menu-btn-fig {
-          width: 30px;
-          height: 4px;
-          background: #1a1a1a;
-        }
-      }
-      .navbar-menu {
-        @include media('<desktop') {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100vh;
-          width: 100%;
-          background-color: #f4ede8;
-          overflow-y: auto;
-        }
-        .menu-list {
-          display: flex;
-          @include media('<desktop') {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 130px;
-            height: 100%;
-            padding-bottom: 20px;
-          }
-
-          .menu-el {
-            padding: 0 10px;
-            @include media('<desktop') {
-              padding: 5px 10px;
-            }
-
-            .menu-el-link {
-              color: #1a1a1a;
-              text-decoration: none;
-              @include media('<desktop') {
-                font-size: 30px;
+              svg {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
               }
             }
-            .menu-el-link--active {
-              color: #ed1c29;
+          }
+        }
+        .navbar-menu-btn {
+          display: none;
+          padding: 11px 0;
+          position: absolute;
+          width: 30px;
+          cursor: pointer;
+          right: 0;
+          z-index: 99;
+          @include media('<desktop') {
+            display: block;
+          }
+          .nav-toggle {
+            .menu-btn-fig {
+              width: 30px;
+              height: 4px;
+              background: #1a1a1a;
+
+              &:after,
+              &:before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 4px;
+                background: #1a1a1a;
+                left: 0;
+              }
+              &:before {
+                top: 0;
+              }
+              &:after {
+                bottom: 0;
+              }
+            }
+          }
+        }
+        .navbar-menu {
+          @include media('>=desktop') {
+            display: block;
+          }
+          @include media('<desktop') {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: #f4ede8;
+            overflow-y: auto;
+          }
+          .menu-list {
+            display: flex;
+            @include media('<desktop') {
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding-top: 130px;
+              height: 100%;
+              padding-bottom: 20px;
+            }
+
+            .menu-el {
+              padding: 0 10px;
+              @include media('<desktop') {
+                padding: 5px 10px;
+              }
+
+              .menu-el-link {
+                color: #1a1a1a;
+                text-decoration: none;
+                @include media('<desktop') {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.nav--open {
+  overflow: hidden;
+
+  .navbar {
+    @include media('<desktop') {
+      height: 100%;
+    }
+    .container {
+      .navbar-inner {
+        .navbar-menu-btn {
+          .nav-toggle {
+            .menu-btn-fig {
+              background-color: transparent;
+              transition: none;
+              @include media('<desktop') {
+                &:after,
+                &:before {
+                  top: 50%;
+                  bottom: auto;
+                }
+                &:before {
+                  -webkit-transform: translateY(-50%) rotate(-45deg);
+                  transform: translateY(-50%) rotate(-45deg);
+                }
+                &:after {
+                  -webkit-transform: translateY(-50%) rotate(45deg);
+                  transform: translateY(-50%) rotate(45deg);
+                }
+              }
             }
           }
         }

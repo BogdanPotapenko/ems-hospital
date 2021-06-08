@@ -49,12 +49,15 @@ $media-expressions: (
   --desktop: #{map-get($breakpoints, 'desktop')};
   --widescreen: #{map-get($breakpoints, 'widescreen')};
 
+  --container-gap: 12px;
+
   // Colors
   --color-white: #fff;
   --color-black: #000;
   --color-grey: #999;
   --color-blue: #39f;
   --color-f4ede8: #f4ede8;
+  --color-link: #242424;
 
   // Fonts
   --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -69,7 +72,7 @@ $media-expressions: (
   --base-min-width: 320px;
 
   // Links base
-  --base-link-color: var(--color-blue);
+  --base-link-color: var(--color-link);
 
   // Buttons base
   --btn-color: var(--color-white);
@@ -92,6 +95,7 @@ $media-expressions: (
   // Base font styles for headings
   --headings-sizes-h1: 3rem;
   --headings-sizes-h2: 2.7rem;
+  --headings-sizes-h2-tablet: 1rem;
   --headings-sizes-h3: 2.4rem;
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;

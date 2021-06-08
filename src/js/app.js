@@ -1,13 +1,12 @@
 import $ from 'jquery';
-
-import MicroModal from 'micromodal';
+import { ScrollSpy } from 'bootstrap';
 import mobileMenu from './modules/mobileMenu';
 import navbarScroll from './modules/navbarScroll';
 
 $(() => {
-  MicroModal.init({
-    openTrigger: 'data-custom-open',
-    disableScroll: true,
+  // eslint-disable-next-line no-new
+  new ScrollSpy(document.body, {
+    target: '#navbar-example',
   });
 
   mobileMenu.init();

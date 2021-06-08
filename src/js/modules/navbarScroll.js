@@ -1,4 +1,4 @@
-const scroll = (function x() {
+const scroll = (() => {
   function init() {
     function navbarScroll() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -11,12 +11,13 @@ const scroll = (function x() {
         document.getElementById('logo').style.width = '161px;';
       }
     }
-    window.onscroll = function Scroll() {
+    window.onscroll = () => {
       navbarScroll();
     };
   }
   return {
     init,
   };
-}());
+})();
+
 export default scroll;

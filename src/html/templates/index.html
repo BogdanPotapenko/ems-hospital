@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  @@include('../partials/head/head.html')
 
-@@include('../partials/head/head.html')
+  <body>
+    <div class="wrapper">
+      @@include('../partials/components/ems-hospital.html')
+      @@include('../partials/components/modal.html')
+    </div>
 
-<body id="body" class="body">
-  <div class="wrapper">
-    @@include('../partials/components/ems-hospital.html')
-    @@include('../partials/components/modal.html')
-  </div>
-
-  @@include('../partials/scripts/common.html')
-</body>
-
+    @@include('../partials/scripts/common.html')
+  </body>
 </html>

@@ -1,14 +1,25 @@
-<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-  <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
     <button
-      class="modal-close"
-      aria-label="Close modal"
-      data-micromodal-close=""
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
     ></button>
     <div class="modal-content">
       <div class="form">
         <div class="form-inner">
-          <div class="form-title">Реєстрація участі у конференції</div>
+          <div class="form-title" id="staticBackdropLabel">
+            Реєстрація участі у конференції
+          </div>
           <div class="form-wrapper">
             <form>
               <div class="form-body">

@@ -1,0 +1,8 @@
+.columns {
+  padding-top: 0px;
+  padding-bottom: 133px;
+  color: #242424;
+  @include media('<desktop') {
+    text-align: center;
+  }
+}

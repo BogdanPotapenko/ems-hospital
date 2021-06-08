@@ -1,61 +1,51 @@
 .footer {
   margin-top: 200px;
   padding: 0 20px 69px;
-
-  .container {
-    .footer-inner {
-      border-top: 1px solid #1a1a1a;
-      padding-top: 70px;
-      display: flex;
-      justify-content: space-between;
+  &-content {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media('<desktop') {
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      text-align: center;
+    }
+  }
+  .logo {
+    display: inline-block;
+    &-link {
+      display: block;
+      .svg {
+        width: 161px;
+        svg {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  &-contact {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    @include media('<desktop') {
+      padding-top: 60px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      padding-bottom: 42px;
+      text-transform: uppercase;
+    }
+    &-body {
+      display: flex;
+      margin: 0 -33px;
       @include media('<desktop') {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .footer-logo {
-        .o-logo {
-          display: inline-block;
-
-          .o-logo-link {
-            display: block;
-
-            .o-svg {
-              width: 161px;
-              svg {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-              }
-            }
-          }
-        }
-      }
-      .footer-contact {
-        color: #1a1a1a;
-        font-size: 18px;
-        font-weight: 300;
-        @include media('<desktop') {
-          padding-top: 60px;
-        }
-
-        .footer-contact-title {
-          font-size: 24px;
-          font-weight: 500;
-          padding-bottom: 42px;
-          text-transform: uppercase;
-        }
-
-        .footer-contact-group {
-          display: flex;
-          margin: 0 -33px;
-          @include media('<desktop') {
-            flex-direction: column;
-          }
-        }
       }
     }
   }

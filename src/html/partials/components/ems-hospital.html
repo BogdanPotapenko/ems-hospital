@@ -1,9 +1,9 @@
 <div class="navbar" id="nav">
   <div class="container">
-    <div class="navbar-inner mobile-menu" id="navbar">
-      <div class="navbar-logo">
-        <a class="logo-link" href="http://localhost:8080"
-          ><div class="logo-svg" id="logo">
+    <div class="navbar-content mobile-menu" id="navbar">
+      <div class="navbar-brand">
+        <a class="navbar-brand-link" href="http://localhost:8080"
+          ><div class="navbar-brand-img" id="logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="419.96"
@@ -25,89 +25,95 @@
             </svg></div
         ></a>
       </div>
-      <div class="navbar-menu-btn">
-          <a href="#nav" class="nav-toggle" role="button" aria-expanded="false" aria-controls="menu">
-            <div class="menu-btn-fig"></div>
-          </a>
+      <div class="navbar-menu-toggle">
+        <a
+          href="#nav"
+          class="menu-toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <div class="menu-toggle-fig"></div>
+        </a>
       </div>
       <div class="navbar-menu" id="menu" hidden>
-        <div class="menu-list">
-          <div class="menu-el" >
-            <a
-              class="menu-el-link"
-              href="#reestraciya"
-              data-id="reestraciya"
-              >Реєстрація</a
-            >
+        <div
+          class="
+            menu-nav-list
+            navbar-light
+            bg-light
+            flex-column
+            align-items-stretch
+            p-3
+          "
+          id="navbar-example"
+        >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-1">Реєстрація</a>
           </div>
-          <div class="menu-el">
-            <a class="menu-el-link" href="#pro-podiu" data-id="pro-podiu"
-              >Про подію</a
-            >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-2">Про подію</a>
           </div>
-          <div class="menu-el">
-            <a class="menu-el-link" href="#programa" data-id="programa"
-              >Програма</a
-            >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-3">Програма</a>
           </div>
-          <div class="menu-el">
-            <a class="menu-el-link" href="#spikeri" data-id="spikeri"
-              >Спiкери</a
-            >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-4">Спiкери</a>
           </div>
-          <div class="menu-el">
-            <a class="menu-el-link" href="#partneri" data-id="partneri"
-              >Партнери</a
-            >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-5">Партнери</a>
           </div>
-          <div class="menu-el">
-            <a class="menu-el-link" href="#kontakti" data-id="kontakti"
-              >Контакти</a
-            >
+          <div class="nav-list">
+            <a class="nav-link" href="#item-6">Контакти</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<main class="body">
-  <section class="event">
-    <span class="hidden" id="reestraciya"></span>
-    <div class="event-inner">
-      <div class="event-text3">
-        <img
-          src="../../../images/kzoz-cemd-mk.png"
-        />
+<main
+  class="body"
+  data-bs-spy="scroll"
+  data-bs-target="#navbar-example"
+  data-bs-offset="0"
+  tabindex="0"
+>
+  <section class="introduction" id="item-1">
+    <div class="introduction-content">
+      <div class="introduction-logo">
+        <img src="../../../images/kzoz-cemd-mk.png" />
         <p>ВСЕУКРАЇНСЬКА ОНЛАЙН КОНФЕРЕНЦІЯ</p>
       </div>
-      <div class="event-text2">
+      <div class="introduction-title">
         Організаційні та тактичні питання<br />
         надання допомоги на догоспітальному етапі
       </div>
-      <div class="event-date-group">
-        <div class="event-date">
-          <div class="event-date-el">
-            <div class="event-date-text">
+      <div class="introduction-date">
+        <div class="date">
+          <div class="date-content">
+            <div class="date-text">
               20 травня 2021 року об 12.00 <small>за Києвом</small>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="timer"
-        data-date="05/20/2021 12:00"
-        data-live="Зараз у прямому ефірі"
-      >
-        <div class="timer-group">
-          <div class="timer-el timer-el--live">
-            <div class="timer-el-inner">
-              <div class="timer-num">Зараз у прямому ефірі</div>
+      <div class="introduction-timer">
+        <div class="timer">
+          <div class="timer-contents">
+            <div class="timer-content">
+              <div class="timer-text">Вебінар завершився</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="event-btn">
-        <a data-custom-open="modal-1" class="event-btn-link" href="#">
+      <div class="introduction-btn">
+        <a
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          href="#"
+        >
           <div class="event-btn-text">Реєстрація</div>
         </a>
       </div>
@@ -115,26 +121,22 @@
   </section>
   <section class="img-single">
     <div class="container">
-      <div class="img-single-fig">
-        <img
-          class="img"
-          src="../../../../images/img-02.jpg"
-        />
+      <div class="img-single-content">
+        <img class="img" src="../../../../images/img-02.jpg" />
       </div>
     </div>
   </section>
-  <section class="column">
-    <span class="hidden" id="pro-podiu"></span>
+  <section class="column" id="item-2">
     <div class="container">
-      <div class="column-title1"><p>Всеукраїнська конференція</p></div>
-      <div class="column-title2">
+      <div class="column-title"><p>Всеукраїнська конференція</p></div>
+      <div class="column-body">
         <p>
           Тема: Організаційні та тактичні питання<br />
           надання допомоги на догоспітальному етапі
         </p>
       </div>
-      <div class="column-row">
-        <div class="column-col">
+      <div class="column-content">
+        <div class="column-line">
           <div class="column-text">
             <p>
               Вітаємо Вас на щорічній науково-практичній конференції, яка
@@ -153,7 +155,7 @@
             </p>
           </div>
         </div>
-        <div class="column-col">
+        <div class="column-line">
           <div class="column-text">
             <p>
               Спікери конференції – представники від Міністерства Охорони
@@ -167,9 +169,9 @@
             </p>
           </div>
         </div>
-        <div class="column-col column-col-wide">
+        <div class="column-line column-line-wide">
           <div class="column-text">
-            <p>&nbsp;</p>
+            <p></p>
             <p style="font-weight: 600">
               <small
                 >Для участі у конференції натисніть «<a
@@ -192,229 +194,223 @@
       </div>
     </div>
   </section>
-  <section class="agenda">
-    <span class="hidden" id="programa"></span>
+  <section class="table" id="item-3">
     <div class="container">
-      <div class="agenda-title">
+      <div class="table-title">
         <div class="content-text">
           <h2>Програма</h2>
         </div>
       </div>
-      <div class="agenda-list">
-        <div class="agenda-list-row agenda-list-row--title">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">Час</div>
-            <div class="agenda-list-el-topic">Назва доповiдi</div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Доповiдач</div>
+      <div class="table-content">
+        <div class="table-content-row table-content-row--title">
+          <div class="table-content-info">
+            <div class="table-content-info-time">Час</div>
+            <div class="table-content-info-topic">Назва доповiдi</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Доповiдач</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">12:00 - 12:05</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">12:00 - 12:05</div>
+            <div class="table-content-info-topic">
               <p>Відкриття конференції. Вступне слово</p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Забашта В.Ф</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Ніконов В.В.</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Забашта В.Ф</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Ніконов В.В.</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">12:05 – 12:20</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">12:05 – 12:20</div>
+            <div class="table-content-info-topic">
               <p>
                 Реалізація концепції розвитку екстреної медичної допомоги.<br />
                 Організація взаємодії догоспітального етапу системи ЕМД з
                 госпітальним етапом
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Данилюк О.М.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Хочай П.Г.</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Данилюк О.М.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Хочай П.Г.</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">12:20 – 12:35</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">12:20 – 12:35</div>
+            <div class="table-content-info-topic">
               <p>
                 Аналіз структури виїздів бригад ЕМД в умовах пандемії COVID-19
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Мороз Є.Д.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Близнюк М.Д.</div>
-              <div class="agenda-list-el-name">Волошин В.Д.</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Мороз Є.Д.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Близнюк М.Д.</div>
+              <div class="table-content-info-name">Волошин В.Д.</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">12:35 – 12:50</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">12:35 – 12:50</div>
+            <div class="table-content-info-topic">
               <p>
                 Навчання персоналу ЕМД з питань допомоги пацієнтам з гострим
                 мозковим інсультом.<br />
                 Вплив пандемії COVID-19 на систему ЕМД.
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Крилюк В.О</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Крилюк В.О</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">12:50 – 13:05</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">12:50 – 13:05</div>
+            <div class="table-content-info-topic">
               <p>
                 Догоспітальний етап. Шлях пацієнта з інсультом.<br />
                 Різниця можлива завдяки екстреній допомозі.
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Московко С.П.</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Московко С.П.</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">13:05 – 13:15</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">13:05 – 13:15</div>
+            <div class="table-content-info-topic">
               <p>
                 Ініціатива Angels. Оптимізація часу надання допомоги пацієнту з
                 інсультом.
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Шевердіна М.В.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Забашта Т.Г.</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Шевердіна М.В.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Забашта Т.Г.</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">13:15 – 13:30</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">13:15 – 13:30</div>
+            <div class="table-content-info-topic">
               <p>
                 Реагування системи служби медицини катастроф України на виклики
                 сучасності
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Гур’єв С.О.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Лисун Д.М.</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Гур’єв С.О.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Лисун Д.М.</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">13:30 – 13:45</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">13:30 – 13:45</div>
+            <div class="table-content-info-topic">
               <p>
                 Помилки надання допомоги при політравмі на догоспітальному етапі
               </p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Мірошніченко Ю.Ю.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Чернов А.Л.</div>
-              <div class="agenda-list-el-name">Феськов А.Е.</div>
-              <div class="agenda-list-el-name">Забашта В.Ф.</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Мірошніченко Ю.Ю.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Чернов А.Л.</div>
+              <div class="table-content-info-name">Феськов А.Е.</div>
+              <div class="table-content-info-name">Забашта В.Ф.</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">13:45 – 14:00</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">13:45 – 14:00</div>
+            <div class="table-content-info-topic">
               <p>Екстрена УЗІ діагностика на догоспітальному етапі</p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Лізогуб К.І.</div>
-              <div class="agenda-list-el-text">спікер</div>
-              <div class="agenda-list-el-name">Кіношенко Є.І.</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Лізогуб К.І.</div>
+              <div class="table-content-info-text">спікер</div>
+              <div class="table-content-info-name">Кіношенко Є.І.</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">14:00 – 14:15</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">14:00 – 14:15</div>
+            <div class="table-content-info-topic">
               <p>Симпатоміметики на догоспитальному этапі</p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Лізогуб М.В.</div>
-              <div class="agenda-list-el-text">спікер</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Лізогуб М.В.</div>
+              <div class="table-content-info-text">спікер</div>
             </div>
           </div>
         </div>
-        <div class="agenda-list-row">
-          <div class="agenda-list-el">
-            <div class="agenda-list-el-time">14:15 – 14:30</div>
-            <div class="agenda-list-el-topic">
+        <div class="table-content-row">
+          <div class="table-content-info">
+            <div class="table-content-info-time">14:15 – 14:30</div>
+            <div class="table-content-info-topic">
               <p>ДИСКУСІЯ. ПИТАННЯ ТА ВІДПОВІДІ</p>
             </div>
-            <div class="agenda-list-el-speaker">
-              <div class="agenda-list-el-name">Всі спікери</div>
+            <div class="table-content-info-speaker">
+              <div class="table-content-info-name">Всі спікери</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="expert">
-    <span class="hidden" id="spikeri"></span>
+  <section class="columns" id="item-4">
     <div class="container">
-      <div class="expert-title">
+      <div class="columns-title">
         <div class="content-text">
           <h2>СПIКЕРИ</h2>
         </div>
       </div>
-      <div class="expert-list">
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-                src="../../../../images/no-photo.jpg"
-              />
+      <div class="columns-body">
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Забашта В.Ф.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Забашта В.Ф.</div>
+              <div class="columns-text">
                 <p>
                   Директор центру екстреної медичної допомоги та медицини
-                  катастроф,&nbsp;м.Харків
+                  катастроф,м.Харків
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Ніконов В.В.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Ніконов В.В.</div>
+              <div class="columns-text">
                 <p>
                   Завідувач кафедри медицини невідкладних станів та медицини
                   катастроф Харківської медичної академії післядипломної освіти
@@ -423,55 +419,49 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Данилюк О.М.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Данилюк О.М.</div>
+              <div class="columns-text">
                 <p>
                   Керівник експертної групи з питань надання екстреної медичної
-                  допомоги Директорату Медичних послуг&nbsp;Міністерства охорони
+                  допомоги Директорату Медичних послугМіністерства охорони
                   здоров’я України
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Московко С.П.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Московко С.П.</div>
+              <div class="columns-text">
                 <p>
                   д.мед.н., професор, завідувач кафедри нервових хвороб
-                  Вінницькогой національного&nbsp; медичного університету імені
-                  М.І. Пирогова, заслужений&nbsp; лікар України. Національний
-                  координатор ініціативи Angels.
+                  Вінницькогой національного медичного університету імені М.І.
+                  Пирогова, заслужений лікар України. Національний координатор
+                  ініціативи Angels.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Мороз Є.Д.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Мороз Є.Д.</div>
+              <div class="columns-text">
                 <p>
                   Директор Державного закладу “Український науково-практичний
                   центр екстреної медичної допомоги та медицини катастроф
@@ -481,16 +471,14 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Крилюк В.О.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Крилюк В.О.</div>
+              <div class="columns-text">
                 <p>
                   Завідувач відділу підготовки інструкторів з надання медичної
                   допомоги в екстремальних ситуаціях Державного закладу
@@ -502,29 +490,25 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Гур’єв С.О.</div>
-              <div class="expert-text"></div>
+            <div class="columns-meta">
+              <div class="columns-name">Гур’єв С.О.</div>
+              <div class="columns-text"></div>
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Мірошніченко Ю.Ю.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Мірошніченко Ю.Ю.</div>
+              <div class="columns-text">
                 <p>
                   Завідувач навчально-тренувального відділу Центра екстреної
                   невідкладної медичної допомоги та медицини катастроф м.Харків
@@ -533,16 +517,14 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Лізогуб К.І.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Лізогуб К.І.</div>
+              <div class="columns-text">
                 <p>
                   Доцент кафедри медицин невідкладних станів та медицини
                   катастроф Харківської медичної академії післядипломної освіти
@@ -551,16 +533,14 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Лізогуб М.В.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Лізогуб М.В.</div>
+              <div class="columns-text">
                 <p>
                   Д.м.н., Доцент кафедри дитячої анестезіології інтенсивної
                   терапії ХМАПО
@@ -569,29 +549,25 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Хочай П.Г.</div>
-              <div class="expert-text"></div>
+            <div class="columns-meta">
+              <div class="columns-name">Хочай П.Г.</div>
+              <div class="columns-text"></div>
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Шевердіна М.В.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Шевердіна М.В.</div>
+              <div class="columns-text">
                 <p>
                   Консультант Angels<br />
                   Україна<br />
@@ -609,16 +585,14 @@
             </div>
           </div>
         </div>
-        <div class="expert-el-wrap">
-          <div class="expert-el">
-            <div class="expert-fig">
-              <img
-              src="../../../../images/no-photo.jpg"
-              />
+        <div class="columns-content">
+          <div class="columns-wrap">
+            <div class="columns-img">
+              <img src="../../../../images/no-photo.jpg" />
             </div>
-            <div class="expert-meta">
-              <div class="expert-name">Забашта Т.Г.</div>
-              <div class="expert-text">
+            <div class="columns-meta">
+              <div class="columns-name">Забашта Т.Г.</div>
+              <div class="columns-text">
                 <p>
                   Консультант Angels<br />
                   Україна<br />
@@ -639,159 +613,140 @@
       </div>
     </div>
   </section>
-  <section class="partners">
-    <span class="hidden" id="partneri"></span>
+  <section class="partners" id="item-5">
     <div class="container">
-      <div class="partners-inner">
         <div class="partners-title">
           <div class="content-text">
             <h2>ПРИ ПIДТРИМЦI</h2>
           </div>
         </div>
         <div class="partners-list">
-          <div class="partners-el">
+          <div class="partners-content">
             <div
-              class="partners-el-img"
-              style="
-                background-image: url(../../../../images/moz.png);
-              "
+              class="partners-content-img"
+              style="background-image: url(../../../../images/moz.png)"
             ></div>
-            <div class="partners-el-text">
+            <div class="partners-content-text">
               <p>МІНІСТЕРСТВО ОХОРОНИ ЗДОРОВ’Я УКРАЙНИ</p>
             </div>
           </div>
-          <div class="partners-el">
+          <div class="partners-content">
             <div
-              class="partners-el-img"
-              style="
-                background-image: url(../../../../images/kharkivoda.png);
-              "
+              class="partners-content-img"
+              style="background-image: url(../../../../images/kharkivoda.png)"
             ></div>
-            <div class="partners-el-text">
+            <div class="partners-content-text">
               <p>
                 ДЕПАРТАМЕНТ ОХОРОНИ ЗДОРОВ’Я ХАРКІВСЬКОЇ ОБЛАСНОЇ ДЕРЖАВНОЇ
                 АДМІНІСТРАЦІЇ
               </p>
             </div>
           </div>
-          <div class="partners-el">
+          <div class="partners-content">
             <div
-              class="partners-el-img"
-              style="
-                background-image: url(../../../../images/kocemd.png);
-              "
+              class="partners-content-img"
+              style="background-image: url(../../../../images/kocemd.png)"
             ></div>
-            <div class="partners-el-text">
+            <div class="partners-content-text">
               <p>
                 КНП ХОР «ЦЕНТР ЕКСТРЕНОЇ МЕДИЧНОЇ ДОПОМОГИ ТА МЕДИЦИНИ
                 КАТАСТРОФ»
               </p>
             </div>
           </div>
-          <div class="partners-el">
+          <div class="partners-content">
             <div
-              class="partners-el-img"
-              style="
-                background-image: url(../../../../images/xmapo.png);
-              "
+              class="partners-content-img"
+              style="background-image: url(../../../../images/xmapo.png)"
             ></div>
-            <div class="partners-el-text">
+            <div class="partners-content-text">
               <p>
                 ХАРКІВСЬКА МЕДИЧНА АКАДЕМІЯ ПІСЛЯДИПЛОМНОЇ<br />
                 ОСВІТИ (ХМАПО)
               </p>
             </div>
           </div>
-          <div class="partners-el">
+          <div class="partners-content">
             <div
-              class="partners-el-img"
-              style="
-                background-image: url(../../../../images/angels.svg);
-              "
+              class="partners-content-img"
+              style="background-image: url(../../../../images/angels.svg)"
             ></div>
-            <div class="partners-el-text"><p>Зробіть Свій Внесок!</p></div>
+            <div class="partners-content-text"><p>Зробіть Свій Внесок!</p></div>
           </div>
         </div>
-      </div>
+      
     </div>
   </section>
-  <section class="past-events">
+  <section class="link-column">
     <div class="container">
-      <div class="past-events-inner">
-        <div class="past-events-title">
+        <div class="link-column-title">
           <div class="content-text">
             <h2>МИНУЛI ПОДIЇ</h2>
           </div>
         </div>
-        <div class="past-events-list">
-          <div class="past-events-el-wrap">
-            <a
-              class="past-events-el"
-              href="#"
-            >
-              <div class="past-events-el-fig">
+        <div class="link-column-list">
+          <div class="link-column-content">
+            <a class="link-column-a" href="#">
+              <div class="link-column-img">
                 <figure
                   style="
                     background-image: url(../../../../images/img-02-411x303.jpg);
                   "
                 ></figure>
               </div>
-              <div class="past-events-el-meta">
-                <div class="past-events-el-title">
+              <div class="link-column-meta">
+                <div class="link-column-title">
                   Надання екстреної медичної допомоги пацієнтам із підозрою на
                   гострий мозковий інсульт. Догоспітальний етап
                 </div>
               </div>
-              <div class="past-events-el-bottom">
-                <div class="past-events-el-date">
+              <div class="link-column-bottom">
+                <div class="link-column-date">
                   <span>Подія відбулась:</span> <span>24.03.2021</span>
                 </div>
-                <div class="past-events-el-link">
-                  <div class="past-events-el-link-text">Перейти</div>
-                  <div class="past-events-el-link-fig"></div>
+                <div class="link-column-link">
+                  <div class="link-column-link-text">Перейти</div>
+                  <div class="link-column-link-img"></div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="past-events-el-wrap">
-            <a
-              class="past-events-el"
-              href="#"
-            >
-              <div class="past-events-el-fig">
+          <div class="link-column-content">
+            <a class="link-column-a" href="#">
+              <div class="link-column-img">
                 <figure
                   style="
                     background-image: url(../../../../images/img-01-411x303.jpg);
                   "
                 ></figure>
               </div>
-              <div class="past-events-el-meta">
-                <div class="past-events-el-title">
+              <div class="link-column-meta">
+                <div class="link-column-title">
                   Сучасні підходи до лікування гострого мозкового інсульту
                 </div>
               </div>
-              <div class="past-events-el-bottom">
-                <div class="past-events-el-date">
+              <div class="link-column-bottom">
+                <div class="link-column-date">
                   <span>Подія відбулась:</span> <span>13.10.2020</span>
                 </div>
-                <div class="past-events-el-link">
-                  <div class="past-events-el-link-text">Перейти</div>
-                  <div class="past-events-el-link-fig"></div>
+                <div class="link-column-link">
+                  <div class="link-column-link-text">Перейти</div>
+                  <div class="link-column-link-img"></div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-      </div>
+      
     </div>
   </section>
-  <section class="footer" id="kontakti">
+  <section class="footer" id="item-6">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-content">
         <div class="footer-logo">
-          <div class="o-logo">
-            <a class="o-logo-link" href="http://localhost:8080">
-              <div class="o-svg o-svg--logo">
+          <div class="logo">
+            <a class="logo-link" href="http://localhost:8080">
+              <div class="svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="419.96"
@@ -819,13 +774,13 @@
             За додатковою інформацією, <br />
             будь ласка, зверніться до:
           </div>
-          <div class="footer-contact-group">
-            <div class="footer-contact-el">
+          <div class="footer-contact-body">
+            <div class="footer-contact-list">
               <div class="footer-contact-name">Марія Шевердіна</div>
               <div class="footer-contact-text">Консультант Angels</div>
               <div class="footer-contact-link">
                 <a
-                  class="footer-contact-tel"
+                  class="footer-contact-num"
                   href="tel:+380671283928"
                   target="_blank"
                   >M: +380 67 128 39 28</a
@@ -833,19 +788,19 @@
               </div>
               <div class="footer-contact-link">
                 <a
-                  class="footer-contact-tel"
+                  class="footer-contact-num"
                   href="mailto:Maria.Sheverdina@iqvia.com"
                   target="_blank"
                   >E: Maria.Sheverdina@iqvia.com</a
                 >
               </div>
             </div>
-            <div class="footer-contact-el">
+            <div class="footer-contact-list">
               <div class="footer-contact-name">Тамара Забашта</div>
               <div class="footer-contact-text">Консультант Angels</div>
               <div class="footer-contact-link">
                 <a
-                  class="footer-contact-tel"
+                  class="footer-contact-num"
                   href="tel:+380504570545"
                   target="_blank"
                   >M: +380 50 457 05 45</a
@@ -853,7 +808,7 @@
               </div>
               <div class="footer-contact-link">
                 <a
-                  class="footer-contact-tel"
+                  class="footer-contact-num"
                   href="mailto:Tamara.Zabashta@iqvia.com"
                   target="_blank"
                   >E: Tamara.Zabashta@iqvia.com</a
@@ -866,4 +821,3 @@
     </div>
   </section>
 </main>
-

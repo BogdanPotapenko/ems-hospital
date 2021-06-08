@@ -8,56 +8,51 @@
     background-position: 150% 100%;
     padding-bottom: 90px;
   }
-
-  .container {
-    .column-title1 {
-      text-align: center;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-bottom: 50px;
+  &-title {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-size: 3vw;
+    @include media('>widescreen') {
       font-size: 36px;
-      font-size: 3vw;
-      @include media('>widescreen') {
-        font-size: 36px;
-      }
-      @include media('<tablet') {
-        font-size: 22px;
-      }
-      @include media('<phone') {
-        font-size: 18px;
-      }
     }
-    .column-title2 {
-      font-weight: 500;
-      font-size: 32px;
-      margin-bottom: 35px;
-      @include media('<desktop') {
-        font-size: 28px;
-      }
+    @include media('<tablet') {
+      font-size: 22px;
     }
-    .column-row {
-      display: flex;
-      margin: 0 -50px;
-      flex-wrap: wrap;
-
-      .column-col {
-        width: 50%;
-        padding: 0 50px;
-        max-width: 512px;
-        @include media('<desktop') {
-          max-width: 100%;
-          width: 100%;
-        }
-
-        .column-text {
-          font-size: 18px;
-          font-weight: 300;
-        }
-      }
-      .column-col-wide {
-        width: 100%;
-        max-width: 100%;
-      }
+    @include media('<phone') {
+      font-size: 18px;
     }
+  }
+  &-body {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 35px;
+    @include media('<desktop') {
+      font-size: 28px;
+    }
+  }
+  &-content {
+    display: flex;
+    margin: 0 -50px;
+    flex-wrap: wrap;
+  }
+  &-line {
+    width: 50%;
+    padding: 0 50px;
+    max-width: 512px;
+    @include media('<desktop') {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &-text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  &-line-wide {
+    width: 100%;
+    max-width: 100%;
   }
 }

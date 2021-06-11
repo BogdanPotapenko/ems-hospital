@@ -1,0 +1,23 @@
+.footer-contact {
+  &-list {
+    padding: 0 33px;
+    @include media('<desktop') {
+      padding: 33px;
+    }
+  }
+  &-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-text {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  &-link {
+    a {
+      font-size: 16px;
+      display: inline-block;
+    }
+  }
+}

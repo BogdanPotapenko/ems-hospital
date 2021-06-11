@@ -1,0 +1,22 @@
+.link-column {
+  padding-bottom: 150px;
+  background-image: url(../../../../images/angels-s.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @include media('<tablet') {
+    padding-bottom: 50px;
+  }
+  &-list {
+    max-width: 1190px;
+    margin: 0 -30px;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: 1400px) {
+      margin: 0 -30px;
+    }
+    @include media('<desktop') {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,12 +1,14 @@
-// You can write a call and import your functions in this file.
-//
-// This file will be compiled into app.js
-// Feel free with using ES6 here.
 import $ from 'jquery';
+import { ScrollSpy } from 'bootstrap';
+import mobileMenu from './modules/mobileMenu';
+import navbarScroll from './modules/navbarScroll';
 
-import dots from './modules/dots';
-
-// When DOM is ready
 $(() => {
-  dots();
+  // eslint-disable-next-line no-new
+  new ScrollSpy(document.body, {
+    target: '#navbar-example',
+  });
+
+  mobileMenu.init();
+  navbarScroll.init();
 });

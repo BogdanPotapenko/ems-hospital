@@ -88,18 +88,22 @@
     }
   }
   &-menu {
-    @include media('>=desktop') {
-      display: block;
-    }
-    @include media('<desktop') {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #f4ede8;
-      overflow-y: auto;
-    }
+
+      @include media('<=desktop') {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #f4ede8;
+        overflow-y: auto;
+
+        &-open {
+          display: block;
+        }
+      }
+
     .menu-nav-list {
       display: flex;
       @include media('<desktop') {

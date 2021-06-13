@@ -1,6 +1,6 @@
 const mobileMenu = (() => {
   const { body } = document;
-  const menu = document.querySelector('#menu');
+  const menu = document.querySelector('.navbar-menu');
   const menuToggle = document.querySelector('.menu-toggle');
   const links = menu.querySelectorAll('a');
   let isMenuOpen = false;
@@ -11,7 +11,7 @@ const mobileMenu = (() => {
 
     menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
     body.style.overflow = isMenuOpen ? 'hidden' : null;
-    menu.hidden = !isMenuOpen;
+    menu.classList = !isMenuOpen ? 'navbar-menu' : 'navbar-menu navbar-menu-open';
   }
 
   function init() {
@@ -25,6 +25,7 @@ const mobileMenu = (() => {
     [...links].forEach((link) => {
       link.addEventListener('click', () => {
         toggleNavbar();
+        menu.classList = 'navbar-menu';
       });
     });
   }

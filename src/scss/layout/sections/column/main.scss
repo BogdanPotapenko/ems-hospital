@@ -8,16 +8,14 @@
     background-position: 150% 100%;
     padding-bottom: 90px;
   }
-  &-title {
+  .h3 {
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 50px;
+  }
+  h3 {
     font-size: 36px;
-    font-size: 3vw;
-    @include media('>widescreen') {
-      font-size: 36px;
-    }
     @include media('<tablet') {
       font-size: 22px;
     }

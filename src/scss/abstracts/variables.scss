@@ -94,10 +94,15 @@ $media-expressions: (
 
   // Base font styles for headings
   --headings-sizes-h1: 3rem;
-  --headings-sizes-h2: 2.7rem;
+  --headings-sizes-h2: 42px;
+  --headings-sizes-h2-xs: 32px;
   --headings-sizes-h2-tablet: 1rem;
   --headings-sizes-h3: 2.4rem;
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;
 }
+
+$modal: (
+  'background': #5a5a5a9c
+)

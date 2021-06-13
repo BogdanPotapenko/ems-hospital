@@ -19,7 +19,6 @@ h6,
   font-weight: bold;
   margin: 0 0 0.5em;
   color: var(--headings-color);
-  
 }
 
 h1,
@@ -31,8 +30,8 @@ h2,
 .h2 {
   font-size: var(--headings-sizes-h2);
 
-  @include media('<desktop') {
-    font-size:  var(--headings-sizes-h2-tablet);
+  @include media('<phone') {
+    font-size: var(--headings-sizes-h2-xs);
   }
 }
 
@@ -73,22 +72,10 @@ a {
   }
 }
 
-.content-text {
-  line-height: 1.8;
-  color: #242424;
-  font-size: 18px;
-  h2 {
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 24px;
-    font-weight: 300;
-    text-align: center;
-    color: #1a1a1a;
-    @include media('<desktop') {
-      font-size: 42px;
-    }
-    @include media('<phone') {
-      font-size: 32px;
-    }
-  }
+.text-center {
+  text-align: center;
+}
+
+.font-weight-light {
+  font-weight: 300;
 }

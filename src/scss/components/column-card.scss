@@ -1,7 +1,8 @@
-.link-column {
+.column-card {
   &-content {
     max-width: 411px;
     width: 100%;
+    height: 100%;
     padding: 0;
     border: 1px solid #816f6f;
     background-color: #f4ede8;
@@ -10,7 +11,7 @@
       width: 100%;
       margin: 30px auto 0;
     }
-  }
+  } 
   &-a {
     position: relative;
     cursor: pointer;

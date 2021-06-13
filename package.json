@@ -68,7 +68,6 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
     "jquery": "3.5.1",
-    "micromodal": "^0.4.6",
     "normalize.css": "8.0.1"
   }
 }

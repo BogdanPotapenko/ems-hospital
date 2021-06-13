@@ -33,7 +33,9 @@ img {
   max-width: none;
 }
 
-
+.wrapper {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1240px;
   margin: 0 auto;

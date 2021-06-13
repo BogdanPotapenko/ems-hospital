@@ -7,11 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     @include media('<desktop') {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
     }
   }
   .logo {

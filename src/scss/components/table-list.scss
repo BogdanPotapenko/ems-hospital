@@ -1,4 +1,4 @@
-.table-content {
+.section-table-content {
   padding-top: 45px;
   &-row {
     border-bottom: 1px solid #816f6f;
@@ -13,7 +13,7 @@
       @include media('<desktop') {
         display: none;
       }
-      .table-content-info {
+      .section-table-content-info {
         &-time {
           font-size: 18px;
           font-weight: 300;

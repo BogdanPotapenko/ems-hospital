@@ -1,0 +1,62 @@
+.field {
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    width: 50%;
+    @include media('<tablet') {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    &-label {
+      font-weight: 500;
+      margin: 0;
+      padding: 0 0 5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      @include media('<phone') {
+        font-size: 14px;
+      }
+    }
+    &-required {
+      display: none;
+    }
+    input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid hsl(0deg 0% 83%);
+      border-radius: 0;
+    }
+    &-description {
+      font-size: 9px;
+      @include media('<phone') {
+        font-size: 10px;
+      }
+    }
+    .input-container {
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          display: flex;
+          align-items: center;
+          padding: 0 0 20px;
+          input {
+            width: 15px;
+            height: 15px;
+          }
+          label {
+            cursor: pointer;
+            padding: 0 0 0 10px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    &-wide {
+      width: 100%;
+    }
+  }

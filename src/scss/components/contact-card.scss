@@ -1,9 +1,7 @@
-.footer-contact {
-  &-list {
-    padding: 0 33px;
-    @include media('<desktop') {
-      padding: 33px;
-    }
+.contact-card {
+  padding: 0 33px;
+  @include media('<desktop') {
+    padding: 33px;
   }
   &-name {
     font-size: 18px;

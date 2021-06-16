@@ -1,13 +1,13 @@
 .section-table-content {
   padding-top: 45px;
   &-row {
-    border-bottom: 1px solid #816f6f;
+    border-bottom: 1px solid var(--border-color);
     padding: 40px 10%;
     @include media('<desktop') {
       padding: 40px 5%;
     }
     &--title {
-      background-color: #d8d1cc;
+      background-color: var(--background-color-grey);
       padding-top: 8px;
       padding-bottom: 10px;
       @include media('<desktop') {
@@ -58,12 +58,12 @@
         order: 3;
         width: calc(100% - 150px);
       }
-      &-text {
-        font-size: 14px;
-        color: #5a5a5a;
-        position: rinfoative;
-        top: -4px;
-      }
+    }
+    &-text {
+      font-size: 14px;
+      color: var(--color-grey);
+      position: relative;
+      top: -4px;
     }
   }
 }

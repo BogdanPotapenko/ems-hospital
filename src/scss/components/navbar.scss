@@ -1,7 +1,7 @@
 .navbar {
   max-width: 100%;
   overflow: hidden;
-  background-color: #f4ede8;
+  background-color: var(--background-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -68,14 +68,14 @@
       &-fig {
         width: 30px;
         height: 4px;
-        background: #1a1a1a;
+        background: var(--color-black);
         &:after,
         &:before {
           content: '';
           position: absolute;
           width: 30px;
           height: 4px;
-          background: #1a1a1a;
+          background: var(--color-black);
           left: 0;
         }
         &:before {
@@ -96,7 +96,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: #f4ede8;
+        background-color: var(--background-color);
         overflow-y: auto;
 
         &-open {
@@ -120,14 +120,13 @@
           padding: 5px 10px;
         }
         .nav-link {
-          color: #1a1a1a;
           text-decoration: none;
           @include media('<desktop') {
             font-size: 30px;
           }
         }
         .active {
-          color: #ed1c29;
+          color: var(--color-link-active);
         }
       }
     }

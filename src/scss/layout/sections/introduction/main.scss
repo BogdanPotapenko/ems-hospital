@@ -1,6 +1,5 @@
 .introduction {
-  background-color: #f4ede8;
-  color: #1a1a1a;
+  background-color: var(--background-color);
   padding: 96px 20px 10px;
 
   &-content {
@@ -26,7 +25,6 @@
   &-title {
     padding-top: 8px;
     text-align: center;
-    color: #1a1a1a;
     font-size: 42px;
     font-weight: 700;
     margin: 0 auto;
@@ -75,7 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #816f6f;
+    color: var(--border-color);
     &-contents {
       position: relative;
       padding: 0 10px;
@@ -83,7 +81,7 @@
     &-content {
       width: auto;
       padding: 21px 40px;
-      border: 1px solid #816f6f;
+      border: 1px solid var(--border-color);
       text-align: center;
     }
     &-text {

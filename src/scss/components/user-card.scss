@@ -8,7 +8,7 @@
       width: 100%;
     }
   &-wrap {
-    background-color: #d8d1cc;
+    background-color: var(--background-color-grey);;
     padding: 20px;
     height: 100%;
     max-width: 336px;
@@ -55,7 +55,6 @@
       font-size: 14px;
     }
     a {
-      color: #1a1a1a;
       border-bottom: 1px solid rgba(26, 26, 26, 0.3);
     }
   }

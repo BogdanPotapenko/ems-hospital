@@ -1,13 +1,13 @@
 .section-table-content {
   padding-top: 45px;
   &-row {
-    border-bottom: 1px solid var(--border-color);
-    padding: 40px 10%;
+    border-bottom: 1px solid map-get($colors,'grey400');
+    padding: 40px;
     @include media('<desktop') {
-      padding: 40px 5%;
+      padding: 40px 20px;
     }
     &--title {
-      background-color: var(--background-color-grey);
+      background-color: map-get($colors,'grey300');
       padding-top: 8px;
       padding-bottom: 10px;
       @include media('<desktop') {
@@ -61,7 +61,7 @@
     }
     &-text {
       font-size: 14px;
-      color: var(--color-grey);
+      color: map-get($colors,'grey500');
       position: relative;
       top: -4px;
     }

@@ -60,7 +60,7 @@ p {
 }
 
 a {
-  color: var(--base-link-color);
+  color: map-get($colors,'grey800');
   text-decoration: none;
   &:focus {
     text-decoration: none;

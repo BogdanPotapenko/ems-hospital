@@ -7,8 +7,8 @@
       padding: 16px 58px;
       display: inline-block;
       margin: 0 auto;
-      color: var(--color-white);
-      background: var(--btn-background-color);
+      color: map-get($colors,'white');
+      background: map-get($colors,'green');
       font-size: 18px;
       text-transform: uppercase;
       min-width: 300px;

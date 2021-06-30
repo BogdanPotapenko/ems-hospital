@@ -1,7 +1,7 @@
 .navbar {
   max-width: 100%;
   overflow: hidden;
-  background-color: var(--background-color);
+  background-color: map-get($colors,'grey100');
   position: fixed;
   top: 0;
   left: 0;
@@ -68,14 +68,14 @@
       &-fig {
         width: 30px;
         height: 4px;
-        background: var(--color-black);
+        background: map-get($colors,'grey900');
         &:after,
         &:before {
           content: '';
           position: absolute;
           width: 30px;
           height: 4px;
-          background: var(--color-black);
+          background: map-get($colors,'grey900');
           left: 0;
         }
         &:before {
@@ -96,7 +96,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: var(--background-color);
+        background-color: map-get($colors,'grey100');;
         overflow-y: auto;
 
         &-open {
@@ -126,7 +126,7 @@
           }
         }
         .active {
-          color: var(--color-link-active);
+          color: map-get($colors,'red');
         }
       }
     }

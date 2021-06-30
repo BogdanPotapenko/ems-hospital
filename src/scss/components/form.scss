@@ -9,7 +9,7 @@
     transform: translateY(-50%);
     width: 100%;
     @include media('<phone') {
-      padding: 10px 5%;
+      padding: 10px;
     }
     &-inner {
       margin: 0 auto;
@@ -39,8 +39,8 @@
         border: none;
         display: inline-block;
         margin: 0 auto;
-        color: #fff;
-        background: var(--color-black);
+        color: map-get($colors,'white');
+        background: map-get($colors,'grey900');
         font-size: 18px;
         min-width: 180px;
         cursor: pointer;

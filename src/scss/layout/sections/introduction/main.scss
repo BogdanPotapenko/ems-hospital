@@ -1,5 +1,5 @@
 .introduction {
-  background-color: var(--background-color);
+  background-color: map-get($colors,'grey100');
   padding: 96px 20px 10px;
 
   &-content {
@@ -23,6 +23,7 @@
     font-size: 16px;
   }
   &-title {
+    color: map-get($colors,'grey900');
     padding-top: 8px;
     text-align: center;
     font-size: 42px;
@@ -59,10 +60,6 @@
       @include media('<phone') {
         font-size: 14px;
       }
-      small {
-        position: relative;
-        font-size: 60%;
-      }
     }
   }
   &-timer {
@@ -73,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--border-color);
+    color: map-get($colors,'grey400');
     &-contents {
       position: relative;
       padding: 0 10px;
@@ -81,7 +78,7 @@
     &-content {
       width: auto;
       padding: 21px 40px;
-      border: 1px solid var(--border-color);
+      border: 1px solid map-get($colors,'grey400');
       text-align: center;
     }
     &-text {

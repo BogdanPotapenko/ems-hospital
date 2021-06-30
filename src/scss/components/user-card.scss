@@ -8,12 +8,12 @@
       width: 100%;
     }
   &-wrap {
-    background-color: var(--background-color-grey);;
+    background-color: map-get($colors,'grey300');
     padding: 20px;
     height: 100%;
     max-width: 336px;
     margin: 0 auto;
-    border-radius: 2%;
+    border-radius: 10px;
   }
   &-img {
     margin: 0 auto;
@@ -23,7 +23,7 @@
     img {
       width: 100%;
       height: auto;
-      border-radius: 2%;
+      border-radius: 10px;
     }
   }
   &-meta {
@@ -55,7 +55,7 @@
       font-size: 14px;
     }
     a {
-      border-bottom: 1px solid rgba(26, 26, 26, 0.3);
+      border-bottom: 1px solid map-get($colors,'grey700');
     }
   }
 }

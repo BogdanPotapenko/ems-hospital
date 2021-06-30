@@ -2,7 +2,7 @@
   margin-top: 200px;
   padding: 0 20px 69px;
   &-content {
-    border-top: 1px solid var(--color-black);
+    border-top: 1px solid map-get($colors,'grey900');
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,7 @@
   &-contact {
     font-size: 18px;
     font-weight: 300;
+    color: map-get($colors,'grey900');
     width: 700px;
     @include media('<desktop') {
       padding-top: 60px;
